@@ -36,7 +36,7 @@ export default {
             });
 
             console.log(universities);
-            // this.universities = universities;
+            this.universities = universities;
         }
     }
 }
