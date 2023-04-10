@@ -1,15 +1,9 @@
 {
   "name": "universities",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "dependencies": {
     "vue": "^3.2.47",
-    "vue-loading-skeleton": "^2.0.0-beta.1",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
@@ -19,5 +13,14 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.1",
     "vite": "^4.1.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhaiminShihab/universities.git"
   }
 }

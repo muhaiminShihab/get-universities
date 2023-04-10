@@ -1,5 +1,6 @@
 <script>
 import University from '../components/UniversityCard.vue'
+import Universities from '../assets/universities.json'
 
 export default {
     name: 'UniversityView',
@@ -9,8 +10,8 @@ export default {
 
     data() {
         return {
-            universities: [],
-            country: 'Bangladesh'
+            universities: Universities,
+            country: 'India'
         }
     },
 
@@ -29,9 +30,13 @@ export default {
     methods: {
         // get universities
         getUniversities() {
-            fetch(`http://universities.hipolabs.com/search?country=${ this.country }`)
-                .then(res => res.json())
-                .then(data => this.universities = data);
+            let jsonData = this.universities; 
+            let universities = jsonData.filter(data => {
+                return data.country === this.country;
+            });
+
+            console.log(universities);
+            // this.universities = universities;
         }
     }
 }
@@ -39,13 +44,13 @@ export default {
 
 <template>
     <main>
-        <!-- <h4>Universities Page</h4> -->
         <div class="w-full md:max-w-4xl mx-auto mb-10 text-center">
             <label for="price" class="block text-2xl font-bold">Search Universities by Country</label>
             <input type="text" id="university" v-model="country"
                 class="block w-full border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300">
         </div>
         <div class="flex flex-wrap">
+            {{ universities }}
             <University v-for="university in universities" :university="university" />
         </div>
     </main>

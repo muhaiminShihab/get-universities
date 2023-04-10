@@ -23,7 +23,7 @@ import { RouterLink, RouterView } from 'vue-router'
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
                 <routerLink to="/" class="text-sm font-semibold leading-6 text-gray-900">Home</routerLink>
-                <routerLink to="/universities" class="text-sm font-semibold leading-6 text-gray-900">Universities</routerLink>
+                <routerLink to="/all-universities" class="text-sm font-semibold leading-6 text-gray-900">Universities</routerLink>
                 <routerLink to="/about-us" class="text-sm font-semibold leading-6 text-gray-900">About Us</routerLink>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -33,7 +33,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </nav>
     </header>
 
-    <div class="mx-auto max-w-7xl pt-10">
+    <div class="mx-auto mx-5 max-w-7xl pt-10">
         <RouterView />
     </div>
 </template>

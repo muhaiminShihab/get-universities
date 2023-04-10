@@ -9,8 +9,8 @@ const router = createRouter({
       component: () => import('../views/HomeView.vue')
     },
     {
-      path: '/universities',
-      name: 'universities',
+      path: '/all-universities',
+      name: 'all-universities',
       component: () => import('../views/UniversityView.vue')
     },
     {
