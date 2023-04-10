@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* import google font */
+/* @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600;700;800;900&display=swap'); */
+
+*, body {
+    font-family: 'Chivo Mono', monospace !important;
+    /* font-size: 20px; */
+}
