@@ -50,7 +50,6 @@ export default {
                 class="block w-full border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300">
         </div>
         <div class="flex flex-wrap">
-            {{ universities }}
             <University v-for="university in universities" :university="university" />
         </div>
     </main>
