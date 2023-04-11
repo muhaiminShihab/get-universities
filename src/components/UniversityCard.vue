@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: "University",
+    name: "UniversityCard",
     props: ["university"],
 }
 </script>
